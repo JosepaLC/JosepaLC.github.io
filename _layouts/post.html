@@ -2,20 +2,21 @@
 layout: default
 comments: true
 ---
-<h1>Josepa</h1>
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-{{ content }}
-<div id="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-    this.page.url = 'https://josepalc.github.io/{{page.url}}';  // Replace PAGE_URL with your page's canonical URL variable
-};
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-josepalc-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div class="post_content">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    {{ content }}
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+        this.page.url = 'https://josepalc.github.io/{{page.url}}';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-josepalc-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>

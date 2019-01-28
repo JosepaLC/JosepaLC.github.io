@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Josepa
-title: Primera entrada al blog
+title: Segunda entrada al blog
 excerpt: Prueba de publicación
 ---
 # Esta es mi primera entrada de blog

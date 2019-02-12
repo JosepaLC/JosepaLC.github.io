@@ -8,6 +8,11 @@ body {
         padding-left: 1.5em;
         text-align: center;
     }
+
+    a {
+        outline: none !important; -moz-outline-style: none !important;
+    }
+
     a.navbar-brand {
         border-right: 1px solid #f4f4f4;
         line-height: 4em;
@@ -18,7 +23,7 @@ body {
 
     }
     .page_container{
-        margin: 1rem;
+        margin: 2rem;
         .home_content{
             padding-left: 10%;
             padding-right: 10%;
@@ -47,5 +52,19 @@ body {
         background-image: url(../img/pro2.jpg);
         height: 500px;
         background-size: cover;
+    }
+
+    .avatar {
+        //position: relative;
+        float: left;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 5rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
